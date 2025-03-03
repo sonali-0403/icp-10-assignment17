@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ticket</title>
+    <style>
+        .ticket-container{
+            border: 1px solid black;
+            width: 500px;
+            height: 400px;
+            margin: 50px auto;
+            box-shadow: 0 0 5px 10px rgb(0, 0, 0,0.5);
+            border-radius: 10px;
+        }
+        
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.ticket {
+  width: 100%;
+  max-width: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.ticket-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #1e66b8;
+  color: white;
+}
+
+.ticket-header .logo {
+  width: 110px;
+
+  height: auto;
+  margin-right: 10px;
+}
+
+.ticket-header  {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.ticket-body {
+  padding: 20px;
+}
+
+.ticket-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+.barcode-placeholder {
+  width: 80%;
+  height: 50px;
+  background-color: #ddd;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.ticket-footer {
+  padding: 10px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.ticket-footer p {
+  font-size: 14px;
+  color: #333;
+}
+
+
+@media screen and (max-width: 480px) {
+  .ticket {
+    width: 90%;
+  }
+
+  .ticket-header  {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ticket-info p {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+  }
+}
+.name{
+  font-family: "Lobster", serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+.png{
+
+  width: 10px;
+  font-size: 20px;
+}
+</style>
+    
+</head>
+<body>
+    <div class="ticket-container">
+        
+            <div class="ticket-header">
+              <img src="logo.png" alt="College Logo" class="logo">
+              <h1 class="png">SIR VISVESVARAYA INSTITUTE OF TECHNOLOGY NASHIK</h1>
+              
+            </div>
+            <div class="ticket-body">
+              <div class="ticket-info">
+                <h1 class="name">Annual College Fest</h1>
+                <p><strong>Date:</strong> March 5, 2025</p>
+                <p><strong>Time:</strong> 6:00 PM</p>
+                <p><strong>Venue:</strong> College Auditorium</p>
+              </div>
+              
+            </div>
+            <div class="ticket-footer">
+              <p>Presented by College Events Committee</p>
+            </div>
+          </div>
+</body>
+</html>
